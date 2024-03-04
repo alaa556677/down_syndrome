@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class DefaultScreen extends StatelessWidget{
+class DefaultScreen extends StatelessWidget {
   final Color? backgroundColor;
   final Size sizeAppbar;
   final Widget? titleWidget;
   final Widget? bottomNavigationBar;
   final Widget? body;
   final List<Widget>? actions;
-  DefaultScreen({super.key,
-    this.backgroundColor,
-    required this.sizeAppbar,
-    this.titleWidget,
-    this.actions,
-    this.bottomNavigationBar,
-    this.body
-  });
+  const DefaultScreen(
+      {super.key,
+      this.backgroundColor,
+      required this.sizeAppbar,
+      this.titleWidget,
+      this.actions,
+      this.bottomNavigationBar,
+      this.body});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

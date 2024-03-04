@@ -1,9 +1,11 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:d_syndrame/core/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/widgets/custom_text.dart';
 
-class HomeScreen extends StatelessWidget{
+class HomeScreen extends StatelessWidget {
   TextEditingController searchController = TextEditingController();
   HomeScreen({super.key});
   @override
@@ -17,16 +19,19 @@ class HomeScreen extends StatelessWidget{
               width: 46.w,
               height: 46.h,
               decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  image: AssetImage('assets/images/picture.png')
-                )
-              ),
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                      image: AssetImage('assets/images/picture.png'))),
             ),
-            const Icon(Icons.notifications_none, color: yellowColor,)
+            const Icon(
+              Icons.notifications_none,
+              color: yellowColor,
+            )
           ],
         ),
-        SizedBox(height: 16.h,),
+        SizedBox(
+          height: 16.h,
+        ),
         Row(
           children: [
             TextWidget(
@@ -41,7 +46,9 @@ class HomeScreen extends StatelessWidget{
               fontWeight: FontWeight.w100,
               fontSize: 24.sp,
             ),
-            SizedBox(height: 12.h,),
+            SizedBox(
+              height: 12.h,
+            ),
             // TextFormField(
             //   controller: searchController,
             //   decoration: InputDecoration(

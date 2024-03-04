@@ -7,7 +7,8 @@ class TabWidget extends StatelessWidget {
   final String label;
   final bool rightDivider;
 
-  TabWidget({super.key,
+  const TabWidget({
+    super.key,
     required this.label,
     required this.rightDivider,
   });
@@ -15,18 +16,19 @@ class TabWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 30 ,
+      height: 30,
       width: double.infinity,
       // padding: const EdgeInsets.all(0),
       decoration: (rightDivider)
           ? const BoxDecoration(
-        border: BorderDirectional(
-          end: BorderSide(
-            color: blueColor,
-            width: 1,
-          ),
-        ),
-      ) : null,
+              border: BorderDirectional(
+                end: BorderSide(
+                  color: blueColor,
+                  width: 1,
+                ),
+              ),
+            )
+          : null,
       child: Center(
         child: TextWidget(
           text: label,
