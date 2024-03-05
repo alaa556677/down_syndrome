@@ -1,6 +1,7 @@
 import 'package:d_syndrame/core/widgets/default_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../core/utils/colors.dart';
@@ -8,6 +9,8 @@ import '../../../../core/widgets/button_custom_widget.dart';
 import '../../../../core/widgets/custom_text.dart';
 import '../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../core/widgets/google_button_widget.dart';
+import '../../../baseScreen/presentation/screens/base_screen.dart';
+import 'forget_password_screen.dart';
 
 class LoginScreen extends StatelessWidget{
   TextEditingController emailController = TextEditingController();
@@ -58,11 +61,16 @@ class LoginScreen extends StatelessWidget{
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  TextWidget(
-                    text: 'Forgot Password?',
-                    fontWeight: FontWeight.w700,
-                    fontSize: 16.sp,
-                    fontColor: blueColor,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  ForgetPasswordScreen()));
+                    },
+                    child: TextWidget(
+                      text: 'Forgot Password?',
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16.sp,
+                      fontColor: blueColor,
+                    ),
                   )
                 ],
               ),
@@ -71,6 +79,9 @@ class LoginScreen extends StatelessWidget{
                 buttonColor: blueColor,
                 text: 'Login',
                 buttonWidth: MediaQuery.of(context).size.width,
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => BaseScreen()));
+                },
               ),
               SizedBox(height: 62.h,),
               Row(

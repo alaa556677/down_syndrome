@@ -73,7 +73,7 @@ class RegisterScreen extends StatelessWidget{
                 controller: nameController,
                 autoFocus: false,
                 radius: 10,
-                suffix: const Icon(Icons.email_outlined, color: yellowColor,),
+                suffix: const Icon(Icons.person, color: yellowColor,),
                 enabledBorderColor: Colors.transparent,
               ),
               SizedBox(height: 38.h,),

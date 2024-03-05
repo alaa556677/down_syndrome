@@ -18,7 +18,7 @@ class ButtonCustomWidget extends StatelessWidget {
       height: buttonHeight,
       decoration: BoxDecoration(
         color: buttonColor,
-        borderRadius: BorderRadius.circular(5),
+        borderRadius: BorderRadius.circular(10),
       ),
       child: MaterialButton(
         onPressed: onPressed,

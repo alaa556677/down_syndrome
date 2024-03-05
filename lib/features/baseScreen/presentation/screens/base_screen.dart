@@ -20,14 +20,14 @@ class _BaseScreenState extends State<BaseScreen> {
     return DefaultScreen(
       sizeAppbar: Size.zero,
       backgroundColor: mainColor,
-      body: Padding(
-        padding: EdgeInsetsDirectional.symmetric(horizontal: 16.w, vertical: 24.h),
-        child: Column(
-          children: [
-            Expanded(
-              child: screens[currentIndex]
-            ),
-            Row(
+      body: Column(
+        children: [
+          Expanded(
+            child: screens[currentIndex]
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.only(start: 18.w, end: 18.w, bottom: 24.h),
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 GestureDetector(
@@ -45,15 +45,15 @@ class _BaseScreenState extends State<BaseScreen> {
                     },
                     child: SvgPicture.asset('assets/images/profile_icon.svg')),
               ],
-            )
-          ],
-        ),
+            ),
+          )
+        ],
       ),
     );
   }
 
   List screens = [
     HomeScreen(),
-    const ProfileScreen()
+    ProfileScreen()
   ];
 }

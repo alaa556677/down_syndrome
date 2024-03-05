@@ -18,10 +18,10 @@ class CustomTextFormField extends StatelessWidget {
       this.onTap,
       this.readOnly = false,
       this.onFieldSubmitted,
-        this.width = 394,
-        this.focusNode,
-       required this.autoFocus,
-        this.contentPaddingHorizontal = 24,
+      this.width = 394,
+      this.focusNode,
+      required this.autoFocus,
+      this.contentPaddingHorizontal = 24,
         this.contentPaddingVertical = 12,
         this.radius = 10,
         this.fillColor,
@@ -62,8 +62,8 @@ class CustomTextFormField extends StatelessWidget {
           boxShadow: [
             BoxShadow(
                 color: Colors.black.withOpacity(.16),
-                blurRadius: 12,
-                offset: Offset(0,6)
+                blurRadius: 5,
+                offset: const Offset(0,6)
             )
           ]
       ),
@@ -77,7 +77,7 @@ class CustomTextFormField extends StatelessWidget {
         onFieldSubmitted: onFieldSubmitted,
         onTap: onTap,
         enabled: isEnabled,
-        style: TextStyle(color: blackColor, fontSize: 16, fontWeight: FontWeight.w300),
+        style: const TextStyle(color: blackColor, fontSize: 16, fontWeight: FontWeight.w300),
         readOnly: readOnly,
         decoration: InputDecoration(
           fillColor: fillColor,

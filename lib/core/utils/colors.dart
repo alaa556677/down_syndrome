@@ -13,4 +13,10 @@ const Color textGreyColor = Color(0xff9DA5B7);
 const Color splashscreenColor = Color(0xffEBD1BF);
 const Color googleContainerColor = Color(0xffECE9EC);
 const Color googleContainerBorderColor = Color(0xffF89AEE);
+const Color textBlackColor = Color(0xff1E1F2E);
+const Color textBlackColor1 = Color(0xff161616);
+const Color textLabelColor = Color(0xff757575);
+const Color textLabelColor1 = Color(0xff888888);
+const Color textLabelColor2 = Color(0xff6F6E6E);
+const Color textLabelColor3 = Color(0xffA0A0A0);
 
