@@ -19,4 +19,8 @@ const Color textLabelColor = Color(0xff757575);
 const Color textLabelColor1 = Color(0xff888888);
 const Color textLabelColor2 = Color(0xff6F6E6E);
 const Color textLabelColor3 = Color(0xffA0A0A0);
+const Color containerChooseColor = Color(0xff5D9BA4);
+const Color greenColor = Color(0xff1C9011);
+const Color colorOne = Color(0xff72ADB6);
+const Color colorTwo = Color(0xff366269);
 

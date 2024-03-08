@@ -19,7 +19,7 @@ class _BaseScreenState extends State<BaseScreen> {
   Widget build(BuildContext context) {
     return DefaultScreen(
       sizeAppbar: Size.zero,
-      backgroundColor: mainColor,
+       
       body: Column(
         children: [
           Expanded(
