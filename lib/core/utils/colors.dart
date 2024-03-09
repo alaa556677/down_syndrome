@@ -25,4 +25,5 @@ const Color colorOne = Color(0xff72ADB6);
 const Color colorTwo = Color(0xff366269);
 const Color greenColor2 = Color(0xff27A41C);
 const Color errorColor = Color(0xffE22121);
+const Color textColor3 = Color(0xff0B8C7C);
 

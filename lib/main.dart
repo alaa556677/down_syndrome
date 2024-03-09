@@ -2,6 +2,8 @@ import 'package:d_syndrame/features/splash/presetation/screens/splash_screen.dar
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'features/home/presentation/screens/book_screen.dart';
+
 void main(){
   runApp(const MyApp());
 }
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget{
       builder: (BuildContext context, Widget? child){
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: SplashScreen(),
+          home: BookScreen(),
         );
       },
     );
