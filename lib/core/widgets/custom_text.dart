@@ -40,9 +40,9 @@ class TextWidget extends StatelessWidget {
       text : TextSpan(
         text: text,
         style: TextStyle(
-          overflow: overFlow,
             fontSize: fontSize,
             fontWeight: fontWeight,
+            overflow: overFlow,
             color: fontColor,
             fontFamily: fontFamily,
             wordSpacing: wordSpacing,

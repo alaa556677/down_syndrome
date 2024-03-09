@@ -22,56 +22,65 @@ class CardSchoolCenter extends StatelessWidget{
           Image.asset(cardSchoolEntity.imagePath, width: 100.w, height: 100,),
           SizedBox(width: 12.w,),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Directionality(
-                  textDirection: TextDirection.rtl,
-                  child: TextWidget(
-                    text: cardSchoolEntity.title,
-                    fontSize: 16.sp,
-                    fontWeight: FontWeight.w600,
-                    fontColor: blackColor,
+            child: Directionality(
+              textDirection: TextDirection.rtl,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Directionality(
+                    textDirection: TextDirection.rtl,
+                    child: TextWidget(
+                      text: cardSchoolEntity.title,
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w600,
+                      fontColor: blackColor,
+                    ),
                   ),
-                ),
-                SizedBox(height: 16.h,),
-                cardSchoolEntity.address != null ? Directionality(
-                    textDirection: TextDirection.rtl,
-                    child: ListTile(
-                      title: TextWidget(
-                        text: cardSchoolEntity.address,
-                        fontSize: 8.sp,
-                        fontWeight: FontWeight.w600,
-                        fontColor: textLabelColor3,
-                      ),
-                      trailing: SvgPicture.asset('assets/images/location.svg'),
-                    )
-                ) : Container(),
-                cardSchoolEntity.mobile != null ? Directionality(
-                    textDirection: TextDirection.rtl,
-                    child: ListTile(
-                      title: TextWidget(
-                        text: cardSchoolEntity.mobile,
-                        fontSize: 8.sp,
-                        fontWeight: FontWeight.w600,
-                        fontColor: textLabelColor3,
-                      ),
-                      trailing: SvgPicture.asset('assets/images/mobile.svg'),
-                    )
-                ) : Container(),
-                cardSchoolEntity.email != null ? Directionality(
-                    textDirection: TextDirection.rtl,
-                    child: ListTile(
-                      title: TextWidget(
-                        text: cardSchoolEntity.email,
-                        fontSize: 8.sp,
-                        fontWeight: FontWeight.w600,
-                        fontColor: textLabelColor3,
-                      ),
-                      trailing: SvgPicture.asset('assets/images/mobile.svg'),
-                    )
-                ) : Container(),
-              ],
+                  SizedBox(height: 16.h,),
+                  cardSchoolEntity.address != null ? Directionality(
+                      textDirection: TextDirection.rtl,
+                      child: ListTile(
+                        dense: true,
+                        visualDensity: const VisualDensity(vertical: -4),
+                        title: TextWidget(
+                          text: cardSchoolEntity.address,
+                          fontSize: 8.sp,
+                          fontWeight: FontWeight.w600,
+                          fontColor: textLabelColor3,
+                        ),
+                        trailing: SvgPicture.asset('assets/images/location.svg'),
+                      )
+                  ) : Container(),
+                  cardSchoolEntity.mobile != null ? Directionality(
+                      textDirection: TextDirection.rtl,
+                      child: ListTile(
+                        dense: true,
+                        visualDensity: const VisualDensity(vertical: -4),
+                        title: TextWidget(
+                          text: cardSchoolEntity.mobile,
+                          fontSize: 8.sp,
+                          fontWeight: FontWeight.w600,
+                          fontColor: textLabelColor3,
+                        ),
+                        trailing: SvgPicture.asset('assets/images/mobile.svg'),
+                      )
+                  ) : Container(),
+                  cardSchoolEntity.email != null ? Directionality(
+                      textDirection: TextDirection.rtl,
+                      child: ListTile(
+                        dense: true,
+                        visualDensity: const VisualDensity(vertical: -4),
+                        title: TextWidget(
+                          text: cardSchoolEntity.email,
+                          fontSize: 8.sp,
+                          fontWeight: FontWeight.w600,
+                          fontColor: textLabelColor3,
+                        ),
+                        trailing: SvgPicture.asset('assets/images/mobile.svg'),
+                      )
+                  ) : Container(),
+                ],
+              ),
             ),
           )
         ],
