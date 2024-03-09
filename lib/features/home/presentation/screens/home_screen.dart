@@ -1,13 +1,12 @@
-import 'package:d_syndrame/core/utils/colors.dart';
 import 'package:d_syndrame/features/home/presentation/screens/quiz_splash_screen.dart';
-import 'package:d_syndrame/features/home/presentation/screens/schools_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
+
+import '../../../../core/utils/colors.dart';
 import '../../../../core/widgets/custom_text.dart';
-import '../../../../core/widgets/home_component_widget.dart';
+import '../../../../core/widgets/home_component.dart';
 import '../../../../core/widgets/search_Text_form.dart';
-import '../../../bookScreen/peresentation/Screen/book.dart';
 import 'development_tools_screen.dart';
 
 class HomeScreen extends StatelessWidget {
