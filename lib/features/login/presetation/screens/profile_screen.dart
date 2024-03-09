@@ -6,6 +6,7 @@ import '../../../../core/widgets/custom_text.dart';
 import '../../../../core/widgets/item_edit_profile.dart';
 import 'edit_profile_screen.dart';
 
+
 class ProfileScreen extends StatelessWidget{
     ProfileScreen({super.key});
   @override
@@ -124,3 +125,4 @@ class EditProfileModel{
     required this.suffixPath
   });
 }
+

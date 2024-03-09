@@ -8,10 +8,13 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../home/presentation/screens/home_screen.dart';
 import '../../../login/presetation/screens/profile_screen.dart';
 
-class BaseScreen extends StatefulWidget{
+class BaseScreen extends StatefulWidget {
+  const BaseScreen({super.key});
+
   @override
   State<BaseScreen> createState() => _BaseScreenState();
 }
+
 class _BaseScreenState extends State<BaseScreen> {
   int currentIndex = 0;
 
@@ -31,14 +34,14 @@ class _BaseScreenState extends State<BaseScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
                         currentIndex = 0;
                       });
                     },
                     child: SvgPicture.asset('assets/images/home_icon.svg')),
                 GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
                         currentIndex = 1;
                       });

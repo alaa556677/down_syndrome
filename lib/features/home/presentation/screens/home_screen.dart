@@ -4,13 +4,13 @@ import 'package:d_syndrame/features/home/presentation/screens/schools_screen.dar
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../core/widgets/card_school_center.dart';
 import '../../../../core/widgets/custom_text.dart';
 import '../../../../core/widgets/home_component_widget.dart';
 import '../../../../core/widgets/search_Text_form.dart';
+import '../../../bookScreen/peresentation/Screen/book.dart';
 import 'development_tools_screen.dart';
 
-class HomeScreen extends StatelessWidget{
+class HomeScreen extends StatelessWidget {
   TextEditingController searchController = TextEditingController();
   HomeScreen({super.key});
   @override
@@ -126,6 +126,9 @@ class HomeScreen extends StatelessWidget{
               HomeComponent(
                 title: 'مقالات مختلفة',
                 imagePath: 'assets/images/article.png',
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => BookScreen()));
+                },
               ),
             ],
           ),

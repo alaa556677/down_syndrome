@@ -7,11 +7,13 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../core/widgets/custom_text.dart';
 
-class SplashScreen extends StatelessWidget{
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultScreen(
-      sizeAppbar: const Size(0,0),
+      sizeAppbar: const Size(0, 0),
       backgroundColor: splashScreenColor,
       body: Padding(
         padding: EdgeInsetsDirectional.only(top: 20.h, bottom: 40.h),
@@ -27,7 +29,9 @@ class SplashScreen extends StatelessWidget{
               width: 48.w,
               height: 48.h,
             ),
-            SizedBox(height: 8.h,),
+            SizedBox(
+              height: 8.h,
+            ),
             TextWidget(
               text: 'Loading',
               fontSize: 14.sp,
@@ -46,7 +50,9 @@ class SplashScreen extends StatelessWidget{
                 ),
               ],
             ),
-            SizedBox(height: 8.h,),
+            SizedBox(
+              height: 8.h,
+            ),
             Row(
               children: [
                 Padding(
@@ -59,17 +65,23 @@ class SplashScreen extends StatelessWidget{
                 ),
               ],
             ),
-            SizedBox(height: 50.h,),
+            SizedBox(
+              height: 50.h,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
                   padding: EdgeInsetsDirectional.only(end: 30.w),
                   child: GestureDetector(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterScreen()));
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => RegisterScreen()));
                       },
-                      child: SvgPicture.asset('assets/images/arrow_splash.svg')),
+                      child:
+                          SvgPicture.asset('assets/images/arrow_splash.svg')),
                 )
               ],
             ),

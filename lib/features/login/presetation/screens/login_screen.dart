@@ -1,5 +1,6 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:d_syndrame/core/widgets/default_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -12,22 +13,25 @@ import '../../../../core/widgets/google_button_widget.dart';
 import '../../../baseScreen/presentation/screens/base_screen.dart';
 import 'forget_password_screen.dart';
 
-class LoginScreen extends StatelessWidget{
+class LoginScreen extends StatelessWidget {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   LoginScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return DefaultScreen(
-      sizeAppbar: const Size(0,0),
+      sizeAppbar: const Size(0, 0),
       backgroundColor: mainColor,
       body: Padding(
-        padding: EdgeInsetsDirectional.symmetric(vertical: 34.h, horizontal: 32.w),
+        padding:
+            EdgeInsetsDirectional.symmetric(vertical: 34.h, horizontal: 32.w),
         child: SingleChildScrollView(
           child: Column(
             children: [
               SvgPicture.asset('assets/images/login_image.svg'),
-              SizedBox(height: 32.h,),
+              SizedBox(
+                height: 32.h,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -39,25 +43,37 @@ class LoginScreen extends StatelessWidget{
                   ),
                 ],
               ),
-              SizedBox(height: 16.h,),
+              SizedBox(
+                height: 16.h,
+              ),
               CustomTextFormField(
                 label: 'email',
                 controller: emailController,
                 autoFocus: false,
                 radius: 10,
-                suffix: const Icon(Icons.email_outlined, color: yellowColor,),
+                suffix: const Icon(
+                  Icons.email_outlined,
+                  color: yellowColor,
+                ),
                 enabledBorderColor: Colors.transparent,
               ),
-              SizedBox(height: 38.h,),
+              SizedBox(
+                height: 38.h,
+              ),
               CustomTextFormField(
                 label: 'password',
                 controller: passwordController,
                 autoFocus: false,
                 radius: 10,
-                suffix: const Icon(Icons.lock_outline, color: yellowColor,),
+                suffix: const Icon(
+                  Icons.lock_outline,
+                  color: yellowColor,
+                ),
                 enabledBorderColor: Colors.transparent,
               ),
-              SizedBox(height: 14.h,),
+              SizedBox(
+                height: 14.h,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -74,7 +90,9 @@ class LoginScreen extends StatelessWidget{
                   )
                 ],
               ),
-              SizedBox(height: 30.h,),
+              SizedBox(
+                height: 30.h,
+              ),
               ButtonCustomWidget(
                 buttonColor: blueColor,
                 text: 'Login',
@@ -83,29 +101,45 @@ class LoginScreen extends StatelessWidget{
                   Navigator.push(context, MaterialPageRoute(builder: (context) => BaseScreen()));
                 },
               ),
-              SizedBox(height: 62.h,),
+              SizedBox(
+                height: 62.h,
+              ),
               Row(
                 children: [
-                  SvgPicture.asset('assets/images/divider_left_or.svg', width: 100.w,),
-                  SizedBox(width: 14.w,),
+                  SvgPicture.asset(
+                    'assets/images/divider_left_or.svg',
+                    width: 100.w,
+                  ),
+                  SizedBox(
+                    width: 14.w,
+                  ),
                   TextWidget(
                     text: 'Or Login With',
                     fontWeight: FontWeight.w500,
                     fontSize: 12.sp,
                     fontColor: greyTextColor,
                   ),
-                  SizedBox(width: 14.w,),
-                  SvgPicture.asset('assets/images/divider_right_or.svg', width: 100.w,),
+                  SizedBox(
+                    width: 14.w,
+                  ),
+                  SvgPicture.asset(
+                    'assets/images/divider_right_or.svg',
+                    width: 100.w,
+                  ),
                 ],
               ),
-              SizedBox(height: 36.h,),
+              SizedBox(
+                height: 36.h,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const GoogleFaceButton(
                     sVGPath: 'assets/images/google_logo.svg',
                   ),
-                  SizedBox(width: 62.w,),
+                  SizedBox(
+                    width: 62.w,
+                  ),
                   const GoogleFaceButton(
                     sVGPath: 'assets/images/facebook_logo.svg',
                   )

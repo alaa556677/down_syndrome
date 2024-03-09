@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 
 class TextWidget extends StatelessWidget {
@@ -17,7 +19,8 @@ class TextWidget extends StatelessWidget {
   TextOverflow? overFlow;
   int? maxLines;
   TextWidget(
-      {super.key, this.text,
+      {super.key,
+      this.text,
       this.fontSize,
       this.fontColor,
       this.fontWeight,
@@ -29,7 +32,8 @@ class TextWidget extends StatelessWidget {
       this.isInSearch = false,
       this.textSpan,
       this.textDecoration,
-      this.decorationColor, this.overFlow,
+      this.decorationColor,
+      this.overFlow,
       this.maxLines});
 
   @override
