@@ -8,6 +8,7 @@ import '../../../../core/widgets/card_school_center.dart';
 import '../../../../core/widgets/custom_text.dart';
 import '../../../../core/widgets/home_component_widget.dart';
 import '../../../../core/widgets/search_Text_form.dart';
+import 'book_screen.dart';
 import 'development_tools_screen.dart';
 
 class HomeScreen extends StatelessWidget{
@@ -126,6 +127,9 @@ class HomeScreen extends StatelessWidget{
               HomeComponent(
                 title: 'مقالات مختلفة',
                 imagePath: 'assets/images/article.png',
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => BookScreen()));
+                },
               ),
             ],
           ),
