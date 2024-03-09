@@ -15,7 +15,7 @@ class _QuizSplashScreenState extends State<QuizSplashScreen> {
 
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 3), (){
+    Future.delayed(const Duration(seconds: 1), (){
       Navigator.push(context, MaterialPageRoute(builder: (context) => QuizLoginScreen()));
     });
     super.initState();

@@ -1,7 +1,10 @@
 import 'package:d_syndrame/core/utils/colors.dart';
+import 'package:d_syndrame/features/home/presentation/screens/quiz_splash_screen.dart';
+import 'package:d_syndrame/features/home/presentation/screens/schools_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../../../core/widgets/card_school_center.dart';
 import '../../../../core/widgets/custom_text.dart';
 import '../../../../core/widgets/home_component_widget.dart';
 import '../../../../core/widgets/search_Text_form.dart';
@@ -96,6 +99,9 @@ class HomeScreen extends StatelessWidget{
               HomeComponent(
                 title: 'اختبار قياس مستوي ذكاء الطفل',
                 imagePath: 'assets/images/test.png',
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => QuizSplashScreen()));
+                },
               ),
               HomeComponent(
                 title: 'ادوات تنمية مهارات الطفل',
@@ -113,6 +119,9 @@ class HomeScreen extends StatelessWidget{
               HomeComponent(
                 title: 'المراكز والمدارس',
                 imagePath: 'assets/images/school.png',
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => SchoolsAndCentersScreen()));
+                },
               ),
               HomeComponent(
                 title: 'مقالات مختلفة',

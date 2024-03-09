@@ -23,4 +23,6 @@ const Color containerChooseColor = Color(0xff5D9BA4);
 const Color greenColor = Color(0xff1C9011);
 const Color colorOne = Color(0xff72ADB6);
 const Color colorTwo = Color(0xff366269);
+const Color greenColor2 = Color(0xff27A41C);
+const Color errorColor = Color(0xffE22121);
 
